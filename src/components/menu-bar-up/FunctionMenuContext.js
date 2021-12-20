@@ -8,12 +8,12 @@ import { IconMenu } from './IconMenu';
 export const FunctionMenuContext = () => {
     const controls = useAnimation()
     const openMenu = useMenu()
-    const toggleMenu = useMenuUpdate()
+    const toggleMenu =  useMenuUpdate() 
 
     useEffect(() => {
         if (openMenu) {
             controls.start({
-                top: '0px',
+                top: '30px',
                 width: '250px',
                 // height: '600px',
                 transition: { duration: 0.7 }
@@ -22,7 +22,7 @@ export const FunctionMenuContext = () => {
         }
         else {
             controls.start({
-                top: '-98px',
+                top: '-123px',
                 width: '100vw',
                 transition: { duration: 1, delay: 1 }
             })
@@ -36,8 +36,8 @@ export const FunctionMenuContext = () => {
 
     return (
         <div>
-            <motion.div className='links-menu' 
-            initial={{top: '-98px', width: '100vw'}}
+            <motion.div className='links-menu'
+                initial={{ top: '-123px', width: '100vw' }}
                 animate={controls}
             >
                 <MenuMap />

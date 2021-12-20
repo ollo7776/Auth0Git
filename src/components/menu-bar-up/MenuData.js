@@ -8,7 +8,7 @@ export const MenuData = [
     },
     {
         id: 2,
-        title: 'GALLERY',
+        title: 'GRAFIKEN',
         path: '/gallery',
     },
     {
@@ -74,11 +74,6 @@ export const MenuDataJava = [
         id: 1.8,
         title: 'UnluckyDays',
         path: '/unluckydays',
-    },
-    {
-        id: 1.9,
-        title: 'DiktatCheck',
-        path: '/diktatcheck',
     },
     {
         id: 2.1,

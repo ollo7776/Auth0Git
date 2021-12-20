@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/style.css'
+import { Link } from "react-router-dom";
 //import logoBackEnd from '../images/backend1.png'
 //import BackEndSky from '../images/BackEndSky.png'
 import BackEndGradUpDown from '../images/BackEndGradUpDown.png'
@@ -14,9 +15,12 @@ import GraphicSVG from '../images/GraphicSVG.png'
 import FormDesign from '../images/FormDesign.png'
 //import ComaBlue from '../images/ComaBlue.png'
 import { NavBar } from '../components/menu-bar-up/NavBar'
+import { LettersAnim } from './LettersAnim'
+import PimkGong from '../images/PimkGong.png'
 // import { AppUserContext } from '../componentUserContext/AppUserContext'
 
 export const Home = () => {
+    
     return (
         <>
             <div className="body-container">
@@ -30,14 +34,15 @@ export const Home = () => {
                     <span className="card">
                         <div className="thumb" style={{ backgroundImage: `url(${BackEndGradUpDown})` }}></div>
                         <article>
-                            <h1>JAVA,
-                                Spring, Maven Boot2</h1>
-                            <h6>ORACLE CERTIFKAT 1Z0-811 <br /> (Certified Foundations Associate)</h6>
-                            <p>Junit5Test,
+                            <h1>Hi, ich bin Aleks</h1>
+                            <p>Auf dieser Seite finden Sie Informationen zu meiner Leidenschaft und in welchen Bereichen ich versuche mich weiterzuentwickeln.</p>
+                            Im Oktober 2021 habe ich ein Zertifikat erhalten:
+                            <h6>ORACLE Certified Foundations Associate 1Z0-811</h6>
+                            <p>JAVA, Spring, Maven Boot2, Junit5Test,
                                 JavaTomcatEmbeded, SQLite Database, SQL commands
                                 JAVA-Übungen -- www.codewars.com, Rank: 4kyu.
                                 (Über 100 JAVA-Programmieraufgaben)
-                                LeetCode Übungen.</p>
+                                LeetCode oder Exercism.org Übungen.</p>
                             <span>Back - End</span>
                             {/* <div class="thumb" ></div> */}
                         </article>
@@ -52,8 +57,12 @@ export const Home = () => {
                         <article>
                             <h1>Frontend: JavaScript, React Hooks, Jquery</h1>
                             <p>Ich verwende geeignete Programmiersprachen und Frameworks, um eine One-Page-App-Website zu erstellen.
-                                Am häufigsten erstelle ich Seiten in funktionalen Komponenten React Hooks.
-
+                                Am häufigsten - React Hooks. <br/><br/>
+                                Spiel mein Spiel. Viel Spaß!
+                                <Link to='/spielchen' 
+            >
+                                <div className="thumb" style={{ backgroundImage: `url(${PimkGong})` }}></div>
+                                </Link>
                             </p>
                             <span>Front - End</span>
                         </article>
@@ -111,8 +120,9 @@ export const Home = () => {
                         <div className="thumb" style={{ backgroundImage: `url(${GraphicSVG})` }}></div>
                         {/* <div className="thumb" ></div> */}
                         <article>
-                            <h1>Inspirierende Grafiken für jede Seite</h1>
-                            <p>Jedes Grafikelement wird von mir erstellt, normalerweise in InkScape oder Gimp. Erstellt oder zeichnet jedes Grafikzeichen im .png .svg-path oder anderen Formaten</p>
+                            <h1>Vektor- oder Rastergrafiken</h1>
+                            <p>Jedes Grafikelement auf alle meine Webseiten wird von mir erstellt (in InkScape oder Gimp). Viele grafische Elemente erfinde ich selbst. Alle Grafiken und Logos auf dieser Webseite die Grafiken und Logos wurden von mir im Grafikprogramm neu gezeichnet.</p>
+                           <LettersAnim />
                             <span>GRAFIKEN</span>
                         </article>
                         {/* </a> */}
@@ -121,14 +131,19 @@ export const Home = () => {
                 <div className="item-7">
                     {/* <a href="https://ollo.link" className="card"> */}
                     <span className="card">
-                        <div className="thumb" style={{ backgroundImage: `url(${MyCode})` }}></div>
+                    <div className="thumb" style={{ backgroundImage: `url(${MyCode})` }}></div>
                         {/* <div className="thumb" ></div> */}
                         <article>
                             {/* <h1>ollo</h1> */}
-                            <p>Über den Autor:
+                            <p>Über den Autor:</p>
                             Code schreiben ist mein Hobby!
                             Ich schreibe hauptsächlich Code in der Programmiersprache Java und auch Frontend-Sprachen wie 
-                            JavaScript, HTML, SCSS, ReactHooks, Ubuntu, Windows Apache2 server configuration ... Ich versuche ständig, neue Fähigkeiten zu erwerben. 
+                            JavaScript, HTML, SCSS, ReactHooks mit Animation in CSS oder Framer Motion. 
+                            Ich konfiguriere Systeme und Servers wie Ubuntu, Windows Apache2 ... 
+                            Ich versuche ständig, neue Fähigkeiten zu erwerben. 
+                            <p>Auf GitHub können Sie den Quellcode meiner Anwendungen einsehen:</p>
+                            <p> https://github.com/ollo7776
+                                
                             </p>
                             <span>ollo.link</span>
                         </article>
@@ -143,8 +158,6 @@ export const Home = () => {
                         <article>
                             {/* <h1>ollo</h1> */}
                             <p>Im Jahr 2021 habe ich das Zertifikat 1Z0-811 JAVA ORACLE Java (Certified Foundations Associate) erhalten. 
-                            Auch das Gestalten von Grafiken für Websites macht mir großen Spaß. 
-                            Alle grafischen Elemente dieser Website wurden von mir geschrieben oder in grafischen Programmen akkurat wiedergegeben. 
                             </p>
                             <span>ollo.link</span>
                         </article>

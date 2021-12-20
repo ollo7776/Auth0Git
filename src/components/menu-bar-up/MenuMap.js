@@ -9,7 +9,7 @@ export const MenuMap = () => {
         <div className='menu-map'>
             <div><Link to='/'>HOME</Link></div>
             <SubMenuProvider><MenuSubJava/></SubMenuProvider>  
-            <div><Link to='/gallery'>GALLERY</Link></div>
+            <div><Link to='/grafiken'>GRAFIKEN</Link></div>
             <div><Link to='/profile'>PROFILE</Link></div>
         </div>
     )

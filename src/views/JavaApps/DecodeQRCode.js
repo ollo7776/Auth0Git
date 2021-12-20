@@ -3,6 +3,7 @@ import '../../styles/style.css'
 import axios from 'axios'
 import { NavBar } from '../../components/menu-bar-up/NavBar';
 import url from '../../components/useURL.js'
+import MyCode from '../../images/MyCode.png'
 
 export const DecodeQRCode = () => {
     const [values, setValues] = useState({
@@ -69,12 +70,9 @@ export const DecodeQRCode = () => {
                     {/* <a href="https://ollo.link" className="card"> */}
                     <span className="card">
                         <article>
-                            <h1></h1>
-                            <p><label htmlFor="firstCode"
-                                className="form-label">
-                                <h1>Decode QR code!</h1>
-                                Your code!<br />
-                                Sample part of the code:<br />
+                            <h1>Decode QR code!</h1>
+                            <p>
+                                Beispielfragment zum Einfügen:<br />
                                 <span className="form-sample-data"> int[][] qrcode = new int[][]<br />&#123;&#123;1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1 &#125;,<br />
                                     &#123;1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1 &#125;,<br />
                                     &#123;1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1 &#125;,<br />
@@ -96,9 +94,7 @@ export const DecodeQRCode = () => {
                                     &#123;1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1 &#125;,<br />
                                     &#123;1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0 &#125;,<br />
                                     &#123;1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1 &#125;&#125;;<br />
-
-                                    it Schould equals: "Hello"<br /></span>
-                            </label>
+                                </span>
                             </p>
                             <button className="form-input-btn"
                                 onClick={CopyToInputField}>
@@ -111,8 +107,8 @@ export const DecodeQRCode = () => {
                 <div className="item-2">
                     {/* <a href="https://ollo.link" className="card"> */}
                     <span className="card">
-                        <form className="form" onSubmit={handleSubmit}>
-                            <div className="form-inputs">
+                        <form onSubmit={handleSubmit}>
+                            <div>
                                 <textarea
                                     onChange={handleFirstCodeInputChange}
                                     value={values.firstCode}
@@ -120,7 +116,7 @@ export const DecodeQRCode = () => {
                                     placeholder='Paste your QR code as a multi array'
                                     name="firstCode"
                                 />
-                                <p>Answer from server:</p>
+                                <p>Antwort vom Server:</p>
                                 {
                                     submitted && !values.firstCode ?
                                         <p style={{ color: 'red' }}>No code is pasted</p>
@@ -129,23 +125,28 @@ export const DecodeQRCode = () => {
                                             : <p style={{ color: 'green' }}>{dataResp}</p>
                                 }
                             </div>
-                            <button className="form-input-btn"
-                                type='submit'>
-                                Submit and send Data to server
+                            <button type='submit'>
+                                Absenden und an Server senden
                             </button>
+                            <p>
+                                Mit diesem Programm können Sie Informationen aus einem QR-Code lesen.
+                                Sie müssen die Matrix einfügen, die den QR-Code imitiert.
+                                Anstelle von schwarzen und weißen Quadraten verwenden wir Einsen und Nullen.
+                            </p>
                         </form>
                     </span>
                 </div>
-                {/* <div className="item-3">
+                <div className="item-3">
                     <span className="card">
-                        <div className="thumb" ></div>
+                    <div className="thumb" style={{ backgroundImage: `url(${MyCode})` }}></div>
                         <article>
-                            <h1>ITEM 3</h1>
-                            <p></p>
-                            <span></span>
+                            <p>In diesem Abschnitt stelle ich einige Anwendungen vor, die in JAVA geschrieben wurden.
+                                Dies sind hauptsächlich Programme der Plattform codewars.com, aber auch meine eigenen.
+                                Ich wünsche dir viel Spaß.</p>
+
                         </article>
                     </span>
-                </div> */}
+                </div>
 
             </div>
         </>

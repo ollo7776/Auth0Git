@@ -125,7 +125,7 @@ HTML CSSResult Skip Results Iframe EDIT ON html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 30px;
+  padding: 30px 0 0 30px;
   z-index: 13;
 }
 
@@ -244,6 +244,25 @@ HTML CSSResult Skip Results Iframe EDIT ON html {
   background-color: red;
 }
 
+.card button {
+  padding: 1px 5px 3px 5px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  border: 1px solid #a8a8a8;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 7px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.card button:hover {
+  background-color: #e7e7e7;
+}
+
 /* typography */
 h1 {
   font-size: 20px;
@@ -271,18 +290,26 @@ h1 {
   position: relative;
 }
 
+.graphic-gallery-page {
+  display: block;
+  position: relative;
+  height: 100vh;
+  background-color: #999;
+}
+
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 100vh;
   padding-top: 100px;
+  padding-bottom: 50px;
   background-color: #999;
 }
 
 .image {
+  max-width: 708px;
   width: 60vw;
 }
 
@@ -294,6 +321,8 @@ h1 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 }
 
 .left-arrow {
@@ -304,6 +333,8 @@ h1 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 }
 
 .slide {
@@ -320,5 +351,91 @@ h1 {
           transition-duration: 2s;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
+}
+
+.thumbs-arrows {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thumbs-pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #999;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-arrow-thumbs {
+  fill: #535353;
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-right: 10px;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+.right-arrow-thumbs {
+  fill: #535353;
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-left: 10px;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+.thumbs {
+  width: 100px;
+  height: 60px;
+  padding: 0 2px 0 2px;
+  margin: 10px;
+  -webkit-box-shadow: 0 0 5px #757575;
+          box-shadow: 0 0 5px #757575;
+}
+
+.style-mo {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(0, 156, 13, 0.9);
+  font-weight: bold;
+  text-align: center;
+  margin-right: 4px;
+  margin-top: 15px;
+}
+
+.style-mo {
+  width: 25;
+  height: 25;
+  border-radius: 3;
+  font-weight: "bold";
+  text-align: "center";
+  margin-right: 4;
+}
+
+.button-clue {
+  width: 7rem;
+}
+
+.pimkGong-button {
+  width: 7rem;
 }
 /*# sourceMappingURL=style.css.map */
