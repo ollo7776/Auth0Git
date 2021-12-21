@@ -1,5 +1,6 @@
 import React, { useContext, useState, createContext } from "react"
 
+// Passing variables and functions via global scope for the top main menu
 const MenuContext = createContext()
 const MenuUpdateContext = createContext()
 const subMenuOpen = createContext()

@@ -1,3 +1,6 @@
+// Home Home with GRID with consecutive blocks (item-0 to 9)
+// displayed responsively depending on the size of the user's device
+
 import React from 'react'
 import '../styles/style.css'
 import { Link } from "react-router-dom";
@@ -15,12 +18,12 @@ import GraphicSVG from '../images/GraphicSVG.png'
 import FormDesign from '../images/FormDesign.png'
 //import ComaBlue from '../images/ComaBlue.png'
 import { NavBar } from '../components/menu-bar-up/NavBar'
-import { LettersAnim } from './LettersAnim'
+import { LettersAnim } from './HomeComponents/LettersAnim'
 import PimkGong from '../images/PimkGong.png'
 // import { AppUserContext } from '../componentUserContext/AppUserContext'
 
 export const Home = () => {
-    
+
     return (
         <>
             <div className="body-container">
@@ -34,10 +37,11 @@ export const Home = () => {
                     <span className="card">
                         <div className="thumb" style={{ backgroundImage: `url(${BackEndGradUpDown})` }}></div>
                         <article>
-                            <h1>Hi, ich bin Aleks</h1>
-                            <p>Auf dieser Seite finden Sie Informationen zu meiner Leidenschaft und in welchen Bereichen ich versuche mich weiterzuentwickeln.</p>
+                            <p>Auf dieser Seite finden Sie Informationen zu meiner Leidenschaft
+                                und in welchen Bereichen ich versuche mich weiterzuentwickeln.</p>
                             Im Oktober 2021 habe ich ein Zertifikat erhalten:
                             <h6>ORACLE Certified Foundations Associate 1Z0-811</h6>
+                            <p><Link to='/java-apps'>Beispielanwendungsprojekte</Link></p>
                             <p>JAVA, Spring, Maven Boot2, Junit5Test,
                                 JavaTomcatEmbeded, SQLite Database, SQL commands
                                 JAVA-Übungen -- www.codewars.com, Rank: 4kyu.
@@ -57,13 +61,13 @@ export const Home = () => {
                         <article>
                             <h1>Frontend: JavaScript, React Hooks, Jquery</h1>
                             <p>Ich verwende geeignete Programmiersprachen und Frameworks, um eine One-Page-App-Website zu erstellen.
-                                Am häufigsten - React Hooks. <br/><br/>
-                                Spiel mein Spiel. Viel Spaß!
-                                <Link to='/spielchen' 
-            >
-                                <div className="thumb" style={{ backgroundImage: `url(${PimkGong})` }}></div>
-                                </Link>
+                                Am häufigsten - React Hooks. <br /><br />
+                                Spiel mein Spiel. Viel Spaß!    
                             </p>
+                            <Link to='/spielchen'
+                                >
+                                    <div className="thumb" style={{ backgroundImage: `url(${PimkGong})` }}></div>
+                                </Link>
                             <span>Front - End</span>
                         </article>
                         {/* </a> */}
@@ -122,7 +126,7 @@ export const Home = () => {
                         <article>
                             <h1>Vektor- oder Rastergrafiken</h1>
                             <p>Jedes Grafikelement auf alle meine Webseiten wird von mir erstellt (in InkScape oder Gimp). Viele grafische Elemente erfinde ich selbst. Alle Grafiken und Logos auf dieser Webseite die Grafiken und Logos wurden von mir im Grafikprogramm neu gezeichnet.</p>
-                           <LettersAnim />
+                            <LettersAnim />
                             <span>GRAFIKEN</span>
                         </article>
                         {/* </a> */}
@@ -131,19 +135,19 @@ export const Home = () => {
                 <div className="item-7">
                     {/* <a href="https://ollo.link" className="card"> */}
                     <span className="card">
-                    <div className="thumb" style={{ backgroundImage: `url(${MyCode})` }}></div>
+                        <div className="thumb" style={{ backgroundImage: `url(${MyCode})` }}></div>
                         {/* <div className="thumb" ></div> */}
                         <article>
                             {/* <h1>ollo</h1> */}
                             <p>Über den Autor:</p>
                             Code schreiben ist mein Hobby!
-                            Ich schreibe hauptsächlich Code in der Programmiersprache Java und auch Frontend-Sprachen wie 
-                            JavaScript, HTML, SCSS, ReactHooks mit Animation in CSS oder Framer Motion. 
-                            Ich konfiguriere Systeme und Servers wie Ubuntu, Windows Apache2 ... 
-                            Ich versuche ständig, neue Fähigkeiten zu erwerben. 
+                            Ich schreibe hauptsächlich Code in der Programmiersprache Java und auch Frontend-Sprachen wie
+                            JavaScript, HTML, SCSS, ReactHooks mit Animation in CSS oder Framer Motion.
+                            Ich konfiguriere Systeme und Servers wie Ubuntu, Windows Apache2 ...
+                            Ich versuche ständig, neue Fähigkeiten zu erwerben.
                             <p>Auf GitHub können Sie den Quellcode meiner Anwendungen einsehen:</p>
                             <p> https://github.com/ollo7776
-                                
+
                             </p>
                             <span>ollo.link</span>
                         </article>
@@ -157,7 +161,7 @@ export const Home = () => {
                         {/* <div className="thumb" ></div> */}
                         <article>
                             {/* <h1>ollo</h1> */}
-                            <p>Im Jahr 2021 habe ich das Zertifikat 1Z0-811 JAVA ORACLE Java (Certified Foundations Associate) erhalten. 
+                            <p>Im Jahr 2021 habe ich das Zertifikat 1Z0-811 JAVA ORACLE Java (Certified Foundations Associate) erhalten.
                             </p>
                             <span>ollo.link</span>
                         </article>

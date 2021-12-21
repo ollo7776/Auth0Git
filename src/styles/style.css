@@ -179,7 +179,7 @@ HTML CSSResult Skip Results Iframe EDIT ON html {
   z-index: 11;
 }
 
-/* card */
+/* Body Styling Card */
 .card {
   min-height: 100%;
   background: white;
@@ -288,6 +288,11 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+}
+
+.card.list {
+  min-height: 30px;
+  text-decoration: none;
 }
 
 .graphic-gallery-page {
@@ -412,7 +417,7 @@ h1 {
           box-shadow: 0 0 5px #757575;
 }
 
-.style-mo {
+.style-letters-animation {
   width: 25px;
   height: 25px;
   background-color: rgba(0, 156, 13, 0.9);
@@ -422,7 +427,7 @@ h1 {
   margin-top: 15px;
 }
 
-.style-mo {
+.style-letters-animation {
   width: 25;
   height: 25;
   border-radius: 3;

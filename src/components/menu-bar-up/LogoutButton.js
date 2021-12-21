@@ -2,6 +2,7 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const LogoutButton = () => {
+  // UseAuth0 for logout and login buttons plus logout icon in SVG
   const { logout } = useAuth0();
   return (
     <span className='logout-button'
@@ -11,7 +12,7 @@ const LogoutButton = () => {
         })
       }
     >
-      {/* Log Out */}
+      {/* Log Out SVG icon */}
       <svg
         viewBox="0 -4 15 29"
         width="30"

@@ -5,17 +5,19 @@ import { motion } from 'framer-motion'
 import { useMenuUpdate } from './MenuContext'
 
 export const IconMenu = () => {
+// Variable and function of the top menu being slided out
     const [isOpen, setIsOpen] = useState(false)
     const toggleMenu = useMenuUpdate()
 
     const iconCrossVariants = {
+        // Rotate the cross icon 45 degrees with Framer Motion
         opened: {
             rotate: 45,
         },
         closed: {
         }
     }
-
+// Check the status of the top menu being pulled out
     const openCloseMenu = () => {
         setIsOpen(state => !state)
     }
@@ -25,15 +27,13 @@ export const IconMenu = () => {
         <>
             <div className='menu' onClick={toggleMenu} >
                 <motion.svg className='menuSVG'
+                //Variant of Framer Motion for icon rotation
                     initial={false}
                     variants={iconCrossVariants}
                     animate={isOpen ? 'opened' : 'closed'}
-                    //onClick={openCloseMenu}
                     onClick={openCloseMenu}
                     width="15"
                     height="15"
-                    //viewBox="-2 -2 24 24"
-                   // fill="none"
                 >
                     <path
                         d='M 8 5 L 13 5 L 13 8 L 8 8 L 8 13 L 5 13 L 5 8 L 0 8 L 0 5 L 5 5 L 5 0 L 8 0 L 8 5'

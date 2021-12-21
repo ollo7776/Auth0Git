@@ -1,5 +1,6 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+// Button Auth0 for registration not used yet
 
 const SignupButton = () => {
   const { loginWithRedirect } = useAuth0();

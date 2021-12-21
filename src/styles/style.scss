@@ -19,6 +19,7 @@ HTML CSSResult Skip Results Iframe EDIT ON html {
   grid-gap: 20px;
 }
 
+// Responsive setting of GRID containers depending on the size of the user's device
 @media only screen and (min-width: 500px) {
   .body-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -146,7 +147,7 @@ HTML CSSResult Skip Results Iframe EDIT ON html {
   z-index: 11;
 }
 
-/* card */
+/* Body Styling Card */
 .card {
   min-height: 100%;
   background: white;
@@ -168,7 +169,6 @@ HTML CSSResult Skip Results Iframe EDIT ON html {
 .card article {
   padding: 5px;
   display: flex;
-
   flex: 1;
   justify-content: space-between;
   flex-direction: column;
@@ -227,6 +227,12 @@ h1 {
   position: relative;
 }
 
+// JAVA APPS LIST Styling
+.card.list {
+  min-height: 30px;
+  text-decoration: none;
+}
+
 // GRAPHIC GALLERY SLIDER
 .graphic-gallery-page {
   display: block;
@@ -246,10 +252,10 @@ h1 {
 .image {
   max-width: 708px;
   width: 60vw;
-
   // border-radius: 10px;
 }
 
+// Right and left arrow for changing the slides on Grafiken Gallery
 .right-arrow {
   fill: #f8e112;
   opacity: 0.6;
@@ -319,7 +325,9 @@ h1 {
   margin: 10px;
   box-shadow: 0 0 5px rgb(117, 117, 117);
 }
-.style-mo {
+
+// CSS styles for animating letters on the home page
+.style-letters-animation {
   width: 25px;
   height: 25px;
   background-color: rgba(0, 156, 13, 0.9);
@@ -328,7 +336,7 @@ h1 {
   margin-right: 4px;
   margin-top: 15px;
 }
-.style-mo {
+.style-letters-animation {
   width: 25;
   height: 25;
   border-radius: 3;

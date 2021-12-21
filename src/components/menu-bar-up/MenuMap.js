@@ -4,7 +4,7 @@ import { MenuSubJava } from "./MenuSubJava";
 import { SubMenuProvider } from "./MenuSubJavaContext";
 
 export const MenuMap = () => {
-
+// Links to the main menu
     return (
         <div className='menu-map'>
             <div><Link to='/'>HOME</Link></div>

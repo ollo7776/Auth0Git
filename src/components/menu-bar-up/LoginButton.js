@@ -2,6 +2,7 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const LoginButton = () => {
+  // UseAuth0 for login and login buttons plus login icon in SVG
   const { loginWithRedirect } = useAuth0();
   return (
     <span className='login-button'

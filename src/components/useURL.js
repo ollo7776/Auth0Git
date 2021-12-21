@@ -1,3 +1,5 @@
+// Change of url addresses for server interfaces depending on the local or web version
+
 //let url = 'http://localhost'
 let url = 'https://ollo.link'
 
